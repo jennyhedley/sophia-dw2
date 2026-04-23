@@ -47,16 +47,13 @@ Can you tell me the plate number?
 (link-repeat: &quot;Confirm&quot;)[
     For confirmation, it&#39;s $plateNumber?
 
-[[Yes, that&#39;s right.]]]</tw-passagedata><tw-passagedata pid="26" name="No, I can&#39;t." tags="" position="600,1675" size="100,100">[[Thank you for your time.]]</tw-passagedata><tw-passagedata pid="27" name="Yes, that&#39;s right." tags="" position="475,1800" size="100,100">[[Thank you for your time, you&#39;ve been a big help.]]</tw-passagedata><tw-passagedata pid="28" name="Thank you for your time." tags="" position="225,825" size="100,100"></tw-passagedata><tw-passagedata pid="29" name="Thank you for your time, you&#39;ve been a big help." tags="" position="475,1925" size="100,100"></tw-passagedata><tw-passagedata pid="30" name="old start" tags="" position="575,250" size="100,100">[[Can you tell us what happened?]] </tw-passagedata><tw-passagedata pid="31" name="Image flash" tags="" position="700,175" size="100,100">(set: $idx to (random: 1, 3))
-(set: $dest to &quot;attacked&quot;)
-(if: $idx is 2)[(set: $dest to &quot;drugging&quot;)]
-(if: $idx is 3)[(set: $dest to &quot;robbery&quot;)]
+[[Yes, that&#39;s right.]]]</tw-passagedata><tw-passagedata pid="26" name="No, I can&#39;t." tags="" position="600,1675" size="100,100">[[Thank you for your time.]]</tw-passagedata><tw-passagedata pid="27" name="Yes, that&#39;s right." tags="" position="475,1800" size="100,100">[[Thank you for your time, you&#39;ve been a big help.]]</tw-passagedata><tw-passagedata pid="28" name="Thank you for your time." tags="" position="225,825" size="100,100"></tw-passagedata><tw-passagedata pid="29" name="Thank you for your time, you&#39;ve been a big help." tags="" position="475,1925" size="100,100"></tw-passagedata><tw-passagedata pid="30" name="START" tags="" position="575,250" size="100,100">[[Can you tell us what happened?]] </tw-passagedata><tw-passagedata pid="31" name="Image flash" tags="" position="700,175" size="100,100">(set: $idx to (random: 1, 3))
 
 (if: $idx is 1)[&lt;img class=&quot;story-image&quot; src=&quot;./images/attacked-scenario-image.jpg&quot; alt=&quot;scenario image&quot; /&gt;]
 (else-if: $idx is 2)[&lt;img class=&quot;story-image&quot; src=&quot;./images/drugging-scenario-image.png&quot; alt=&quot;scenario image&quot; /&gt;]
 (else:)[&lt;img class=&quot;story-image&quot; src=&quot;./images/robbery-scenario-image.jpg&quot; alt=&quot;scenario image&quot; /&gt;]
 
-(after: 5s)[(go-to: $dest)]</tw-passagedata><tw-passagedata pid="32" name="attacked" tags="" position="700,1800" size="100,100"></tw-passagedata><tw-passagedata pid="33" name="drugging" tags="" position="825,1800" size="100,100"></tw-passagedata><tw-passagedata pid="34" name="robbery" tags="" position="950,1800" size="100,100"></tw-passagedata></tw-storydata>
+(after: 5s)[(go-to: &quot;START&quot;)]</tw-passagedata><tw-passagedata pid="32" name="attacked" tags="" position="700,1800" size="100,100"></tw-passagedata><tw-passagedata pid="33" name="drugging" tags="" position="825,1800" size="100,100"></tw-passagedata><tw-passagedata pid="34" name="robbery" tags="" position="950,1800" size="100,100"></tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">(function(){"use strict";
 var require,define;!function(){var e={},r={};require=function(i){var n=e[i];return n&&(r[i]=n[1].apply(void 0,n[0].map(require)),e[i]=void 0),r[i]},(define=function(r,i,n){if("function"==typeof r)return r();e[r]=[i,n]}).amd=!0}();/*!
  * https://github.com/paulmillr/es6-shim
